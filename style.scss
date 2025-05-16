@@ -1,0 +1,225 @@
+.body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.nav {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    &-link {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+.download-btn {
+    background-color: #fd6f00;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 0.4rem 1rem;
+    font-size: 18px;
+
+    margin-top: -0.4rem;
+    font-weight: 200;
+}
+
+.jobs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+
+    &-left {
+        &_name {
+            font-size: 50px;
+
+            color: #fd6f00;
+        }
+        &_web {
+            line-height: 35%;
+            font-size: 35px;
+
+            margin-left: 2rem;
+        }
+        &_game {
+            line-height: 35%;
+            font-size: 35px;
+
+            margin-left: 4rem;
+        }
+        &_sound {
+            line-height: 35%;
+            font-size: 35px;
+
+            margin-left: 6rem;
+        }
+        &_3d {
+            line-height: 35%;
+            font-size: 35px;
+
+            margin-left: 10rem;
+        }
+    }
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+
+    &-right {
+        margin-top: 10rem;
+        &_tittle {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        &_text {
+            max-width: 38rem;
+            font-size: 20px;
+            margin-bottom: 3rem;
+        }
+        &_jobs {
+        }
+        &_progress-bar {
+            margin-top: -2rem;
+            width: 80%;
+        }
+    }
+}
+
+.services {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-tittle {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    &-text {
+        max-width: 75rem;
+
+        text-align: center;
+    }
+    &-cards {
+        display: flex;
+        justify-content: center;
+    }
+    &-card {
+        transition: transform 0.9s ease;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        text-align: center;
+
+        &-logo {
+            font-size: 4rem;
+            margin-top: 2rem;
+            opacity: 1;
+        }
+        &-tittle {
+            font-size: 25px;
+            font-weight: bolder;
+            line-height: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+        &-text {
+            font-size: 15px;
+            margin-top: 0.7rem;
+            font-weight: lighter;
+            opacity: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+    }
+}
+
+// Some hover effects for the services cards
+.services-card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #fd6f00;
+    color: white;
+    border-radius: 50px;
+}
+
+.services-card:hover .services-card-text {
+    opacity: 1;
+    margin-bottom: -3rem;
+}
+.services-card:hover .services-card-logo {
+    margin-top: -3rem;
+}
+
+// My projects section
+.projects {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-tittle {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    &-text {
+        max-width: 75rem;
+        text-align: center;
+    }
+    &-cards {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+// Lets Work Together section
+.lets-work {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-input {
+        display: flex;
+        direction: horizontal;
+        gap: 1rem;
+    }
+    &-tittle {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    &-email{
+        width: 20rem;
+        height: 2rem;
+        border-radius: 10px;
+        padding-left: 1rem; 
+    }
+    &-btn {
+        background-color: #fd6f00;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        padding: 0.4rem 1rem;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: 200;
+    }
+}
