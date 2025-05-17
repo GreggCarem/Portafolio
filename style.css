@@ -23,8 +23,24 @@
   color: white;
   padding: 0.4rem 1rem;
   font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
   margin-top: -0.4rem;
   font-weight: 200;
+}
+
+.download-btn:hover {
+  transition: transform 0.9s ease;
+  transform: scale(1.2);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-btn:active {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fd6f00;
+  background-color: #1e1e1e;
 }
 
 .jobs {
@@ -55,7 +71,13 @@
 .jobs-left_3d {
   line-height: 35%;
   font-size: 35px;
+  margin-bottom: 4rem;
   margin-left: 10rem;
+}
+.jobs-left_work {
+  margin-left: 6rem;
+  padding: 1rem 2rem;
+  font-size: 20px;
 }
 
 .about-me {
@@ -161,15 +183,50 @@
 .projects-tittle {
   font-size: 35px;
   font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 .projects-text {
   max-width: 75rem;
   text-align: center;
+  text-decoration: none;
 }
 .projects-cards {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+.projects-all {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.project-tittle {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.project-text {
+  font-size: 15px;
+  color: white;
+}
+.project-img {
+  border-radius: 10px;
+  border: none;
+  width: 20rem !important;
+  height: 30rem !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-link {
+  text-decoration: none;
 }
 
 .lets-work {
@@ -203,4 +260,66 @@
   font-size: 15px;
   border-radius: 10px;
   font-weight: 200;
+}
+
+.lets-work-email:active {
+  border: #fd6f00 solid 2px;
+}
+
+.swiper {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #000000;
+  padding: 1rem 1.7rem;
+  background-color: #fd6f00;
+  border-radius: 50%;
+  font-weight: bold !important;
+}
+
+.swiper-button-next {
+  right: 2rem !important;
+}
+
+.swiper-button-prev {
+  left: 2rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fd6f00 !important;
+}
+
+.swiper-pagination {
+  position: static !important;
+  top: 40rem !important;
+  z-index: 10;
+}
+
+.swiper-slide-active {
+  transform: scale(1.7);
+  overflow: visible;
+  transition: transform 0.4s ease;
+}
+
+.swiper-slide:hover {
+  border: #fd6f00 solid 3px;
 }/*# sourceMappingURL=style.css.map */

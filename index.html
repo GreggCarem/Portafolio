@@ -13,15 +13,22 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Gregoire Careme | Portafolio</title>
   </head>
   <body class="body">
     <nav class="nav">
-      <a class="nav-link" href="#projects">About Me</a>
-      <a class="nav-link" href="#contact">Services</a>
-      <a class="nav-link" href="#contact">Projects</a>
+      <a class="nav-link" href="#about-me">About Me</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#projects">Projects</a>
       <a class="nav-link" href="#contact">Contacts</a>
-      <button class="download-btn">Download CV</button>
+      <a href="./assets/CV-Gregoire-Careme.pdf" download class="download-btn">
+        Download CV
+      </a>
     </nav>
     <!-- Jobs First part -->
     <div class="jobs">
@@ -31,6 +38,13 @@
         <h2 class="jobs-left_game">Game Developer</h2>
         <h2 class="jobs-left_sound">Sound Engineer</h2>
         <h2 class="jobs-left_3d">3D Artist</h2>
+        <a
+          href="./assets/CV-Gregoire-Careme.pdf"
+          download
+          class="download-btn jobs-left_work"
+        >
+          Lets Work Together
+        </a>
       </div>
       <!-- // The first images will go here -->
       <div class="jobs-right">
@@ -38,7 +52,7 @@
       </div>
     </div>
     <!-- // About Me -->
-    <div class="about-me">
+    <div id="about-me" class="about-me">
       <!-- // The first images will go here -->
 
       <div class="about-me-left">
@@ -79,7 +93,7 @@
       </div>
     </div>
     <!-- Services -->
-    <div class="services">
+    <div id="services" class="services">
       <h2 class="services-tittle">Services</h2>
       <h3 class="services-text">
         I offer modern web development with a focus on performance, clean
@@ -125,7 +139,7 @@
     </div>
 
     <!-- My Projects -->
-    <div class="projects">
+    <div id="projects" class="projects">
       <h2 class="projects-tittle">My Projects</h2>
       <h3 class="projects-text">
         I’ve worked on a variety of creative and technical projects—from
@@ -135,27 +149,183 @@
         I focus on performance, user engagement, and bringing artistic concepts
         to life through code and design
       </h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="http://imagebuddy.s3-website.eu-north-1.amazonaws.com/"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/image-buddy.png"
+                alt="Image Buddy"
+              />
+              <h1 class="project-tittle">Image Buddy</h1>
+              <h2 class="project-text">Image search powered by Unsplash</h2>
+            </a>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="https://greggcarem.github.io/OxygenShop/"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/oxygen-shop.png"
+                alt="Oxygen Shop"
+              />
+              <h1 class="project-tittle">Oxygen Shop</h1>
+              <h2 class="project-text">Shopify center</h2>
+            </a>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="https://greggcarem.github.io/Hotel-Miranda/"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/miranda.png"
+                alt="Hotel Miranda"
+              />
+              <h1 class="project-tittle">Hotel Miranda</h1>
+              <h2 class="project-text">Booking managment and Showcasing rooms</h2>
+            </a>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="http://imagebuddydashboard.s3-website.eu-north-1.amazonaws.com"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/dashboard.png"
+                alt="Hotel Miranda Dashboard"
+              />
+              <h1 class="project-tittle">Hotel Miranda Dashboard</h1>
+              <h2 class="project-text">Dashbaord Managing the rooms and recervations.</h2>
+            </a>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="https://app.centrl.studio/"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/centrl.png"
+                alt="Centrl"
+              />
+              <h1 class="project-tittle">Centrl</h1>
+              <h2 class="project-text">Booking Studios and Sound Engineers</h2>
+            </a>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="https://greggcarem.github.io/Periodic-Table-/"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/table.png"
+                alt="Periodic Table"
+              />
+              <h1 class="project-tittle">Periodic Table</h1>
+              <h2 class="project-text">Interactive made fully with JS</h2>
+            </a>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="swiper-slide project">
+            <a
+              class="project-link"
+              href="http://imagebuddy.s3-website.eu-north-1.amazonaws.com/"
+            >
+              <img
+                class="project-img"
+                src="./assets/projects/artiom.png"
+                alt="Artiom"
+              />
+              <h1 class="project-tittle">Artiom</h1>
+              <h2 class="project-text">3D Gallery expirience</h2>
+            </a>
+          </div>
+        </div>
+        <!-- Optional Controls -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+
     <!-- Lets Work Togeather -->
     <div class="lets-work">
       <h2 class="lets-work-tittle">Let’s Work Together</h2>
       <div class="lets-work-input">
-        <input class="lets-work-email" type="email" name="" id="" placeholder="Enter Your Email " />
+        <input
+          class="lets-work-email"
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter Your Email "
+        />
         <button class="lets-work-btn">Contact Me</button>
       </div>
     </div>
     <!-- Social Media -->
     <div class="social-media">
-        <nav class="nav">
-            <a class="nav-link" href="#projects">About Me</a>
-            <a class="nav-link" href="#contact">Services</a>
-            <a class="nav-link" href="#contact">Projects</a>
-            <a class="nav-link" href="#contact">Contacts</a>
-            <button class="download-btn">Download CV</button>
-          </nav>
+      <nav class="nav">
+        <a class="nav-link" href="#projects">About Me</a>
+        <a class="nav-link" href="#contact">Services</a>
+        <a class="nav-link" href="#contact">Projects</a>
+        <a class="nav-link" href="#contact">Contacts</a>
+        <button class="download-btn">Download CV</button>
+      </nav>
     </div>
 
     <!-- Footer -->
     <div class="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 50,
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 20,
+          depth: 100,
+          modifier: 1.5,
+          slideShadows: false,
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
