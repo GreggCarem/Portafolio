@@ -37,7 +37,7 @@ const clock = new THREE.Clock();
 // Load the model
 const loader = new GLTFLoader();
 loader.load(
-  "assets/Baymax.glb",
+  "assets/baymax.glb",
   (gltf) => {
     model = gltf.scene;
     model.scale.set(1, 1, 1);
