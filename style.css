@@ -1,26 +1,28 @@
 .body {
-  background-color: #1e1e1e;
+  background-color: #dadada;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .nav {
   margin-top: 4rem;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: right;
+  gap: 5rem;
+  padding-right: 3rem;
 }
 .nav-link {
-  color: white;
+  color: #333333;
   text-decoration: none;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .download-btn {
-  background-color: #fd6f00;
+  background-color: #212121;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: #dadada;
   padding: 0.4rem 1rem;
   font-size: 18px;
   text-decoration: none;
@@ -45,39 +47,36 @@
 
 .jobs {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10rem;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 3rem;
 }
 .jobs-left_name {
-  font-size: 50px;
-  color: #fd6f00;
+  font-size: 7.188rem;
+  line-height: 85%;
+  color: transparent;
+  -webkit-text-stroke: 3px #1e1e1e;
 }
 .jobs-left_web {
-  line-height: 35%;
-  font-size: 35px;
-  margin-left: 2rem;
+  line-height: 15%;
+  font-size: 7.188rem;
+  color: #1e1e1e;
+  text-align: right;
+  text-transform: uppercase;
 }
 .jobs-left_game {
-  line-height: 35%;
-  font-size: 35px;
-  margin-left: 4rem;
+  line-height: 15%;
+  font-size: 7.188rem;
+  color: #1e1e1e;
+  text-align: right;
+  text-transform: uppercase;
 }
 .jobs-left_sound {
-  line-height: 35%;
-  font-size: 35px;
-  margin-left: 6rem;
-}
-.jobs-left_3d {
-  line-height: 35%;
-  font-size: 35px;
-  margin-bottom: 4rem;
-  margin-left: 10rem;
-}
-.jobs-left_work {
-  margin-left: 6rem;
-  padding: 1rem 2rem;
-  font-size: 20px;
+  line-height: 15%;
+  font-size: 7.188rem;
+  color: #1e1e1e;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .about-me {
@@ -85,9 +84,9 @@
   align-items: center;
   justify-content: center;
   gap: 9rem;
-}
-.about-me-right {
-  margin-top: 10rem;
+  width: 100vw;
+  height: 40rem;
+  background-color: #1e1e1e;
 }
 .about-me-right_tittle {
   font-size: 35px;
@@ -97,6 +96,10 @@
   max-width: 38rem;
   font-size: 20px;
   margin-bottom: 3rem;
+  font-weight: lighter;
+}
+.about-me-right_jobs {
+  font-weight: lighter;
 }
 .about-me-right_progress-bar {
   margin-top: -2rem;
@@ -179,6 +182,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1e1e1e;
 }
 .projects-tittle {
   font-size: 35px;
@@ -322,4 +326,28 @@
 
 .swiper-slide:hover {
   border: #fd6f00 solid 3px;
+}
+
+canvas {
+  pointer-events: visible;
+}
+
+canvas {
+  top: 0;
+  left: 0;
+}
+
+.frame-overlay {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.threejs-container {
+  position: relative;
+  z-index: 3;
 }/*# sourceMappingURL=style.css.map */

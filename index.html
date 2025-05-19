@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles and Fonts  -->
     <link rel="stylesheet" href="style.css" />
+
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <script src="./swiper.js" defer></script>
 
     <title>Gregoire Careme | Portafolio</title>
   </head>
@@ -33,30 +33,33 @@
     <!-- Jobs First part -->
     <div class="jobs">
       <div class="jobs-left">
-        <h1 class="jobs-left_name">Gregoire Careme</h1>
-        <h2 class="jobs-left_web">Web Developer</h2>
-        <h2 class="jobs-left_game">Game Developer</h2>
-        <h2 class="jobs-left_sound">Sound Engineer</h2>
-        <h2 class="jobs-left_3d">3D Artist</h2>
-        <a
-          href="./assets/CV-Gregoire-Careme.pdf"
-          download
-          class="download-btn jobs-left_work"
-        >
-          Lets Work Together
-        </a>
+        <h1 class="jobs-left_name">
+          Gregoire <br />
+          Careme
+        </h1>
       </div>
       <!-- // The first images will go here -->
       <div class="jobs-right">
-        <img src="./assets/profile-image.png" alt="Profile Image" />
+        <h2 class="jobs-left_web">Web Developer</h2>
+        <h2 class="jobs-left_sound">Sound Design</h2>
+        <h2 class="jobs-left_game">Game Design</h2>
+
+        <h2 class="jobs-left_game">+</h2>
       </div>
     </div>
+
     <!-- // About Me -->
     <div id="about-me" class="about-me">
       <!-- // The first images will go here -->
 
       <div class="about-me-left">
-        <img src="./assets/artiom-image.png" alt="Robot Image" />
+       
+        <div
+          id="threejs-container"
+          class="threejs-container"
+          style="width: 40rem; height: 40rem"
+        ></div>
+     
       </div>
       <div class="about-me-right">
         <h2 class="about-me-right_tittle">About Me</h2>
@@ -69,7 +72,7 @@
         <h4 class="about-me-right_jobs">Web Developer</h4>
         <img
           class="about-me-right_progress-bar"
-          src="./assets/progress-bar-1.png"
+          src="./assets/progress-bar-3.png"
           alt="Progress Bar"
         />
         <h4 class="about-me-right_jobs">Website Optimization</h4>
@@ -81,7 +84,7 @@
         <h4 class="about-me-right_jobs">Game developer</h4>
         <img
           class="about-me-right_progress-bar"
-          src="./assets/progress-bar-3.png"
+          src="./assets/progress-bar-1.png"
           alt="Progress Bar"
         />
         <h4 class="about-me-right_jobs">Sound Engineer</h4>
@@ -138,6 +141,20 @@
       </div>
     </div>
 
+    <!-- Lets Work Togeather -->
+    <div class="lets-work">
+      <h2 class="lets-work-tittle">Let’s Work Together</h2>
+      <div class="lets-work-input">
+        <input
+          class="lets-work-email"
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter Your Email "
+        />
+        <button class="lets-work-btn">Contact Me</button>
+      </div>
+    </div>
     <!-- My Projects -->
     <div id="projects" class="projects">
       <h2 class="projects-tittle">My Projects</h2>
@@ -195,7 +212,9 @@
                 alt="Hotel Miranda"
               />
               <h1 class="project-tittle">Hotel Miranda</h1>
-              <h2 class="project-text">Booking managment and Showcasing rooms</h2>
+              <h2 class="project-text">
+                Booking managment and Showcasing rooms
+              </h2>
             </a>
           </div>
 
@@ -211,16 +230,15 @@
                 alt="Hotel Miranda Dashboard"
               />
               <h1 class="project-tittle">Hotel Miranda Dashboard</h1>
-              <h2 class="project-text">Dashbaord Managing the rooms and recervations.</h2>
+              <h2 class="project-text">
+                Dashbaord Managing the rooms and recervations.
+              </h2>
             </a>
           </div>
 
           <!-- Slide 5 -->
           <div class="swiper-slide project">
-            <a
-              class="project-link"
-              href="https://app.centrl.studio/"
-            >
+            <a class="project-link" href="https://app.centrl.studio/">
               <img
                 class="project-img"
                 src="./assets/projects/centrl.png"
@@ -269,21 +287,6 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
-    <!-- Lets Work Togeather -->
-    <div class="lets-work">
-      <h2 class="lets-work-tittle">Let’s Work Together</h2>
-      <div class="lets-work-input">
-        <input
-          class="lets-work-email"
-          type="email"
-          name=""
-          id=""
-          placeholder="Enter Your Email "
-        />
-        <button class="lets-work-btn">Contact Me</button>
-      </div>
-    </div>
     <!-- Social Media -->
     <div class="social-media">
       <nav class="nav">
@@ -298,34 +301,7 @@
     <!-- Footer -->
     <div class="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 2,
-        loop: true,
-        spaceBetween: 50,
-        coverflowEffect: {
-          rotate: 20,
-          stretch: 20,
-          depth: 100,
-          modifier: 1.5,
-          slideShadows: false,
-        },
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <div id="threejs-container"></div>
+    <script type="module" src="/3js.js"></script>
   </body>
 </html>
